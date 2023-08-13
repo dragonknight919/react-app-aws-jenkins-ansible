@@ -7,13 +7,13 @@
   <img alt="Tool" src="https://badges.aleen42.com/src/javascript.svg">
   <img alt="Tool" src="https://badges.aleen42.com/src/react.svg">
   <img alt="Tool" src="https://badges.aleen42.com/src/github.svg">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/devenes/react-app-jenkins-ansible-ecr?color=yellow">
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/devenes/react-app-jenkins-ansible-ecr?color=purple">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/devenes/react-app-jenkins-ansible-ecr?color=pink">
-  <img alt="License" src="https://img.shields.io/github/license/devenes/react-app-jenkins-ansible-ecr?color=red">
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/devenes/react-app-jenkins-ansible-ecr?color=56BEB8" /> -->
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/devenes/react-app-jenkins-ansible-ecr?color=56BEB8" /> -->
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/devenes/react-app-jenkins-ansible-ecr?color=56BEB8" /> -->
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/dragonmstr/react-app-jenkins-ansible-ecr?color=yellow">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/dragonmstr/react-app-jenkins-ansible-ecr?color=purple">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/dragonmstr/react-app-jenkins-ansible-ecr?color=pink">
+  <img alt="License" src="https://img.shields.io/github/license/dragonmstr/react-app-jenkins-ansible-ecr?color=red">
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/dragonmstr/react-app-jenkins-ansible-ecr?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/dragonmstr/react-app-jenkins-ansible-ecr?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/dragonmstr/react-app-jenkins-ansible-ecr?color=56BEB8" /> -->
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/devenes" target="_blank">Author</a>
+  <a href="https://github.com/dragonmstr" target="_blank">Author</a>
 </p>
 
 ## 📜 Project Architecture
@@ -32,7 +32,7 @@
 
 ## :dart: About
 
-This project aims to create a Jenkins pipeline to deploy web-page written Nodejs and React Frameworks on AWS Cloud Infrastructure using Ansible. Building infrastructure process is managing with control node utilizing Ansible. This infrastructure has 1 jenkins server (`Amazon Linux 2 AMI`) as ansible control node and 3 EC2's as worker node (`Red Hat Enterprise Linux 8 with High Availability`). These EC2's will be launched on AWS console. Web-page has 3 main components which are postgresql, nodejs, and react. Each component is serving in Docker container on EC2s dedicated for them. Postgresql is serving as Database of web-page. Nodejs controls backend part of web-side and react controls frontend side of web-page. The code was written by Devenes and architecture will be created by AWS & DevOps Team.
+This project aims to create a Jenkins pipeline to deploy web-page written Nodejs and React Frameworks on AWS Cloud Infrastructure using Ansible. Building infrastructure process is managing with control node utilizing Ansible. This infrastructure has 1 jenkins server (`Amazon Linux 2 AMI`) as ansible control node and 3 EC2's as worker node (`Red Hat Enterprise Linux 8 with High Availability`). These EC2's will be launched on AWS console. Web-page has 3 main components which are postgresql, nodejs, and react. Each component is serving in Docker container on EC2s dedicated for them. Postgresql is serving as Database of web-page. Nodejs controls backend part of web-side and react controls frontend side of web-page. The code was written by dragonmstr and architecture will be created by AWS & DevOps Team.
 
 ## :sparkles: Contents
 
@@ -69,9 +69,9 @@ The following tools were used in this project:
 
 ![Project](./project.png)
 
-- Your team has recently ended up a project that aims to serve as web page. You and your colleagues are assigned to work on this project. Devenes has done with code and DevOps team is going to deploy the app in production environment using ansible.
+- Your team has recently ended up a project that aims to serve as web page. You and your colleagues are assigned to work on this project. dragonmstr has done with code and DevOps team is going to deploy the app in production environment using ansible.
 
-- Application is coded by Devenes and given you as DevOps team. Web-page allows users to collect their infos. Registration data should be kept in separate PostgreSQL database located in one of EC2s. Nodejs framework controls backend and serves on port 5000, it is als connected to the PostgreSQL database on port 5432. React framework controls the frontend and it is also connected to the Nodejs server on port 5000. React server broadcasts web-page on port 3000.
+- Application is coded by dragonmstr and given you as DevOps team. Web-page allows users to collect their infos. Registration data should be kept in separate PostgreSQL database located in one of EC2s. Nodejs framework controls backend and serves on port 5000, it is als connected to the PostgreSQL database on port 5432. React framework controls the frontend and it is also connected to the Nodejs server on port 5000. React server broadcasts web-page on port 3000.
 
 - The Web Application will be deployed using Nodejs and React framework.
 
@@ -167,7 +167,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [
 
 ```bash
 # Clone the project
-git clone https://github.com/devenes/react-app-jenkins-ansible-ecr
+git clone https://github.com/dragonmstr/react-app-jenkins-ansible-ecr
 
 # Access the project folder
 cd react-app-jenkins-ansible-ecr/jenkins_server
@@ -182,7 +182,7 @@ terraform apply -auto-approve
 <http://JENKINS_SERVER_IP>:8080
 
 # Connect to the Ansible server with SSH and get the project files
-git clone https://github.com/devenes/react-app-jenkins-ansible-ecr
+git clone https://github.com/dragonmstr/react-app-jenkins-ansible-ecr
 
 # After you configured the Jenkins server and the project files, you can start the project by using Ansible playbook
 ansible-playbook -i inventory_aws_ec2.yml -u ec2-user playbook.yml
@@ -256,7 +256,7 @@ ansible-playbook -i inventory_aws_ec2.yml -u ec2-user playbook.yml
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
-Made with :heart: by <a href="https://github.com/devenes" target="_blank">devenes</a>
+Made with :heart: by <a href="https://github.com/dragonmstr" target="_blank">dragonmstr</a>
 
 &#xa0;
 
